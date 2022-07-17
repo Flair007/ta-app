@@ -8,4 +8,5 @@ import com.cerner.talentacquisition.model.Interviewer;
 @Repository
 public interface InterviewerRepository extends JpaRepository<Interviewer, Long> {
 
+	Interviewer findByEmailIdAndPassword(String email,String password);
 }

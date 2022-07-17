@@ -11,5 +11,6 @@ public interface CandidatesRepository extends JpaRepository<Candidates, Long> {
 	List<Candidates> findByBusinessUnit(String id);
 	//List<Candidates> findByAcrossBusinessUnit(String acrossBu);
 	
+	List<Candidates> findByInterviewerId(long id);
 
 }
